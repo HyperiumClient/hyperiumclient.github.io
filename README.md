@@ -1,5 +1,4 @@
-# Hyperium Client
-visit [here](https://hcc.sk1er.club) to download the Client
+# Hyperium Client Website 
+Visit [here](https://hyperium.cc) to download the client
 =======
-# hcc.sk1er.club   
-HCC website and updates repo
+This repository contains the code for Hyperium's Website including releases and a link to the discord server.
