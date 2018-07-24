@@ -1,0 +1,47 @@
+nav div.collapse.navbar-collapse ul.navbar-nav li.active {
+  font-weight: 500;
+}
+
+nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads {
+  font-weight: 500;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads:hover {
+  color: white;
+  background-color: #007bff;
+}
+
+header {
+  background-color: gray;
+  background-image: url("../images/mc-cinematic-blured.png");
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 100vh;
+}
+
+header img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+header div.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+header div.scroll-down a {
+  transition: all 0.5s;
+}
+
+header div.scroll-down a:hover {
+  opacity: 0.5;
+}
+
+section {
+  padding: 50px 0 25px 0;
+}
