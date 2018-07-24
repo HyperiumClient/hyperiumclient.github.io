@@ -1,4 +1,7 @@
-# [Hyperium Client Website](https://hyperium.cc) 
-Visit [here](https://hyperium.cc) to download the client
-=======
-This repository contains the code for Hyperium's Website including releases and a link to the discord server.
+# hyperiumclient.github.io
+
+Hyperium Minecraft Client github page. [See it online](https://hyperium.cc/)
+
+## Built With
+
+* [Bootstrap](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
