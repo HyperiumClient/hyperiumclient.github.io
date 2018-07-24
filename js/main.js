@@ -34,11 +34,19 @@ $(function() {
     });
   });
 
-  fetchJson(INSTALLER_LATEST_RELEASE_URL, function (data) {
+  fetchJson(INSTALLER_LATEST_RELEASE_URL, function(data) {
     const asset = data.assets[0];
     const cardElement = $('div#universal-installer-card');
     cardElement.find('a.card-link').attr('href', asset.browser_download_url);
     cardElement.find('small.text-muted').text('Version ' + asset.name);
+  });
+
+  $('a[data-scroll-to="true"]').click(function(event) {
+    event.preventDefault();
+    const element = $(this);
+    const targetId = element.attr("href");
+    const targetElement = $(targetId);
+    scrollTo(targetElement.offset().top, 300);
   });
 
   function fetchJson(url, callback) {
@@ -57,5 +65,22 @@ $(function() {
     };
     httpRequest.open('GET', url);
     httpRequest.send();
+  }
+
+  //From: https://stackoverflow.com/a/39494245
+  function scrollTo(elementY, duration) {
+    var startingY = window.pageYOffset;
+    var diff = elementY - startingY;
+    var start;
+    window.requestAnimationFrame(function step(timestamp) {
+      if (!start)
+        start = timestamp;
+      var time = timestamp - start;
+      var percent = Math.min(time / duration, 1);
+      window.scrollTo(0, startingY + diff * percent);
+      if (time < duration) {
+        window.requestAnimationFrame(step);
+      }
+    })
   }
 });
