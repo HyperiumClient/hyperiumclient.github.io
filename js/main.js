@@ -49,6 +49,11 @@ $(function() {
     scrollTo(targetElement.offset().top, 300);
   });
 
+  $('body').scrollspy({
+    target: 'nav',
+    offset:50
+  });
+
   function fetchJson(url, callback) {
     var httpRequest = window.XMLHttpRequest
       ? new XMLHttpRequest()

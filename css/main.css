@@ -1,4 +1,4 @@
-nav div.collapse.navbar-collapse ul.navbar-nav li.active {
+nav div.collapse.navbar-collapse ul.navbar-nav li a.active {
   font-weight: 500;
 }
 
