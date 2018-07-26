@@ -54,6 +54,14 @@ $(function() {
     offset:50
   });
 
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      console.log('SW: working with scope ', registration.scope);
+    }).catch(function(err) {
+      console.log('SW: registration failed ', err);
+    });
+  }
+
   function fetchJson(url, callback) {
     var httpRequest = window.XMLHttpRequest
       ? new XMLHttpRequest()
