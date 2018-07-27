@@ -1,6 +1,6 @@
 const CACHE_VERSION = 'v1';
 const CACHE_NAME = 'hyperiumclient-page-chache-' + CACHE_VERSION;
-const URLS_TO_CACHE = [
+const PRECACHE_URLS = [
   '/',
   '/favicon.png',
   '/css/main.css',
@@ -16,12 +16,12 @@ const URLS_TO_CACHE = [
 
 self.addEventListener('install', function(event) {
   event.waitUntil(caches.open(CACHE_NAME).then(function(cache) {
-    return cache.addAll(URLS_TO_CACHE);
-  }));
+    return cache.addAll(PRECACHE_URLS);
+  }).then(self.skipWaiting()));
 });
 
 self.addEventListener("fetch", function(event) {
-  if (event.request.method !== 'GET') {
+  if (event.request.method !== 'GET' || !event.request.url.startsWith(self.location.origin)) {
     return;
   }
 
@@ -30,15 +30,14 @@ self.addEventListener("fetch", function(event) {
     return cached || networked;
 
     function fetchedFromNetwork(response) {
-      var cacheCopy = response.clone();
       caches.open(CACHE_NAME).then(function add(cache) {
-        cache.put(event.request, cacheCopy);
+        cache.put(event.request, response.clone());
       });
       return response;
     }
 
-    function unableToResolve() {
-      console.error('SW: fetch request failed in both cache and network.', event.request.method, event.request.url);
+    function unableToResolve(response) {
+      console.error('SW: fetch request failed in both cache and network.', event.request, response);
       return new Response('<h1>Service Unavailable</h1>', {
         status: 503,
         statusText: 'Service Unavailable',
