@@ -35,7 +35,7 @@ $(function() {
   });
 
   fetchJson(INSTALLER_LATEST_RELEASE_URL, function(data) {
-    const asset = data.assets[0];
+    const asset = data.assets[1];
     const cardElement = $('div#universal-installer-card');
     cardElement.find('a.card-link').attr('href', asset.browser_download_url);
     cardElement.find('small.text-muted').text('Version ' + asset.name);
