@@ -8,6 +8,11 @@ nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads {
   border-color: #007bff;
 }
 
+nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads.active {
+  color: white;
+  background-color: #007bff;
+}
+
 nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads:hover {
   color: white;
   background-color: #007bff;
@@ -16,9 +21,12 @@ nav div.collapse.navbar-collapse ul.navbar-nav li a.btn.btn-downloads:hover {
 header {
   background-color: gray;
   background-image: url("../images/mc-cinematic-blured.png");
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
   position: relative;
+}
+
+header.full-height {
   height: 100vh;
 }
 

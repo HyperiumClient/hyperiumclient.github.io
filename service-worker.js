@@ -1,10 +1,12 @@
-const CACHE_VERSION = 'v1';
-const CACHE_NAME = 'hyperiumclient-page-chache-' + CACHE_VERSION;
+const CACHE_VERSION = 'v3';
+const CACHE_NAME = 'hyperiumclient-page-cache-' + CACHE_VERSION;
 const PRECACHE_URLS = [
   '/',
   '/favicon.png',
   '/css/main.css',
-  '/js/main.js',
+  '/js/common.js',
+  '/js/pages/index.js',
+  '/js/pages/downloads.js',
   '/images/arrow-drop-down.png',
   '/images/discord-large.png',
   '/images/discord-small.png',
@@ -30,8 +32,9 @@ self.addEventListener("fetch", function(event) {
     return cached || networked;
 
     function fetchedFromNetwork(response) {
+      var cloned = response.clone();
       caches.open(CACHE_NAME).then(function add(cache) {
-        cache.put(event.request, response.clone());
+        cache.put(event.request, cloned);
       });
       return response;
     }
