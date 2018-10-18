@@ -1,17 +1,17 @@
 $(function() {
-  const HYPERIUM_VERSIONS_JSON_URL = 'https://raw.githubusercontent.com/HyperiumClient/Hyperium-Repo/master/installer/versions.json';
-  const INSTALLER_LATEST_RELEASE_URL = 'https://api.github.com/repos/HyperiumClient/Installer/releases/latest';
+  const UNIVERSAL_INSTALLER_RELEASE_URL = 'https://api.github.com/repos/HyperiumClient/Installer/releases/latest';
+  const HYPERIUM_LATEST_VERSION_URL = 'https://api.hyperium.cc/versions';
 
-  fetchJson(HYPERIUM_VERSIONS_JSON_URL, function(data) {
-    const latestVersion = data.versions.sort(function(versionOne, versionTwo) {
-      return versionTwo["release-id"] - versionOne["release-id"];
-    })[0];
+  fetchJson(HYPERIUM_LATEST_VERSION_URL, function(data) {
+    const latestVersion = data.latest;
     const cardElement = $('div#latest-version-card');
     cardElement.find('div.card-body a.btn').attr('href', latestVersion.url);
-    cardElement.find('div.card-footer small.text-muted').text('Version ' + latestVersion.name);
+    let versionString = 'Version ' + latestVersion.build;
+    versionString += ' build ' + latestVersion.id;
+    cardElement.find('div.card-footer small.text-muted').text(versionString);
   });
 
-  fetchJson(INSTALLER_LATEST_RELEASE_URL, function(data) {
+  fetchJson(UNIVERSAL_INSTALLER_RELEASE_URL, function(data) {
     const asset = data.assets.filter(function(asset) {
       return !asset.name.toLowerCase().includes('sources');
     })[0];
