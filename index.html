@@ -33,13 +33,13 @@
     <meta name="twitter:image" content="https://hyperium.cc/favicon.png">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="https://hyperium.cc/">
-        <img src="images/hyperium-small.png" alt="Hyperium Logo" width="36" height="36"/>
+      <a class="navbar-brand" href="/">
+        <img src="/images/hyperium-small.png" alt="Hyperium Logo" width="36" height="36" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,21 +65,21 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/HyperiumClient/Hyperium/" target="_blank">
-              <img width="16" src="images/github.png" alt="GitHub"/>
+              <img width="16" src="/images/github.png" alt="GitHub" />
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://twitter.com/HyperiumClient/" target="_blank">
-              <img width="16" src="images/twitter.png" alt="Twitter"/>
+              <img width="16" src="/images/twitter.png" alt="Twitter" />
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://discordapp.com/invite/8GakFcT/" target="_blank">
-              <img width="16" src="images/discord-small.png" alt="Discord"/>
+              <img width="16" src="/images/discord-small.png" alt="Discord" />
             </a>
           </li>
           <li class="nav-item">
-            <a href="#downloads" class="btn btn-downloads ml-md-2" data-scroll-to="true">
+            <a href="/downloads" class="btn btn-downloads ml-md-2">
               Downloads
             </a>
           </li>
@@ -87,7 +87,7 @@
       </div>
     </nav>
 
-    <header id="home">
+    <header id="home" class="full-height">
       <div class="container h-100">
         <div class="row h-100">
           <div class="col my-auto text-center text-white">
@@ -100,7 +100,7 @@
       </div>
       <div class="scroll-down">
         <a href="#mods" data-scroll-to="true">
-            <img src="images/arrow-drop-down.png" alt="Scroll Down Arrow" width="50"/>
+          <img src="/images/arrow-drop-down.png" alt="Scroll Down Arrow" width="50" />
         </a>
       </div>
     </header>
@@ -110,7 +110,7 @@
         <div class="row justify-content-center">
           <div class="col col-xs-8 col-sm-4 col-md-3 text-center">
             <h2>Mods</h2>
-            <hr/>
+            <hr />
           </div>
         </div>
         <div class="card-columns">
@@ -249,7 +249,7 @@
         <div class="row justify-content-center">
           <div class="col-xs-8 col-sm-4 col-md-3 text-center">
             <h2>Features</h2>
-            <hr/>
+            <hr />
           </div>
         </div>
         <div class="card-deck mb-sm-3">
@@ -291,62 +291,12 @@
       </div>
     </section>
 
-    <section id="downloads">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Downloads</h2>
-            <hr/>
-          </div>
-        </div>
-        <div class="card-group">
-          <div class="card" id="universal-installer-card">
-            <div class="card-body">
-              <h5 class="card-title">Universal Installer</h5>
-              <a href="#" class="card-link">.jar</a>
-              <p class="card-text">
-                <small class="text-muted">Version Loading...</small>
-              </p>
-            </div>
-          </div>
-          <div class="card" id="latest-version-card">
-            <div class="card-body">
-              <h5 class="card-title">Hyperium Latest Version</h5>
-              <a href="#" class="card-link">.jar</a>
-              <p class="card-text">
-                <small class="text-muted">Version Loading...</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hyperium Addon Kit</h5>
-              <a href="https://github.com/HypixelCommunityClient/Addon-Workspace/archive/v1.0.zip" class="card-link">.zip</a>
-              <a href="https://github.com/HypixelCommunityClient/Addon-Workspace/archive/v1.0.tar.gz" class="card-link">.tar.gz</a>
-              <p class="card-text">
-                <small class="text-muted">Version 1.0</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hyperium Pack</h5>
-              <a href="http://bit.ly/HyperiumPack" class="card-link">.zip</a>
-              <p class="card-text">
-                <small class="text-muted">Version 1.0</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="privacy-policy">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xs-8 col-sm-4 col-md-3 text-center">
             <h2>Privacy Policy</h2>
-            <hr/>
+            <hr />
           </div>
         </div>
         <div class="card-deck">
@@ -354,8 +304,10 @@
             <div class="card-body">
               <h5 class="card-title">What data does Hyperium Collect?</h5>
               <p class="card-text">
-                When using Hyperium, the client and integrated mods send a few small pieces of information to a remote server in exchange for a temporary token for accessing data from Hypixel. This information includes your Minecraft UUID and username, Minecraft Version,
-                Client Version and specific mod being used. This information is processed and used to determine if the client is out of date or if the client should abort the startup procedure. Hyperium may also collect the servers you play on and the duration of time spent on servers. 
+                When using Hyperium, the client and integrated mods send a few small pieces of information to a remote server in exchange for a temporary token for accessing data from Hypixel. This information includes your Minecraft UUID and
+                username, Minecraft Version,
+                Client Version and specific mod being used. This information is processed and used to determine if the client is out of date or if the client should abort the startup procedure. Hyperium may also collect the servers you play on and
+                the duration of time spent on servers.
               </p>
             </div>
           </div>
@@ -376,20 +328,20 @@
         <div class="row justify-content-center">
           <div class="col-xs-8 col-sm-4 col-md-3 text-center">
             <h2>Contact</h2>
-            <hr/>
+            <hr />
           </div>
         </div>
         <div class="row justify-content-center mb-3">
           <div class="col-xs-12 col-sm-6 col-md-4">
             <a href="https://discordapp.com/invite/8GakFcT/" target="_blank" rel="noopener noreferrer">
-              <img src="images/discord-large.png" alt="Discord Logo" width="300"/>
+              <img src="/images/discord-large.png" alt="Discord Logo" width="300" />
             </a>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-xs-8 col-sm-4 col-md-3 text-center">
             <h2>Contributors</h2>
-            <hr/>
+            <hr />
           </div>
         </div>
         <div class="card-columns" id="contributors-container"></div>
@@ -410,7 +362,20 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/pages/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71140240-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-71140240-7');
+
+    </script>
   </body>
 
 </html>
