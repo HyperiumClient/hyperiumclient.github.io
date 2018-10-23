@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: 
+Allow: /sitemaps/
+Sitemap: https://hyperium.cc/sitemaps/hyperiumcc/sitemap.xml
