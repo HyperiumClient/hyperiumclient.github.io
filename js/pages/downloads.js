@@ -5,7 +5,7 @@ $(function() {
   fetchJson(HYPERIUM_LATEST_VERSION_URL, function(data) {
     const latestVersion = data.latest;
     const cardElement = $('div#latest-version-card');
-    cardElement.find('div.card-body a.btn').attr('href', latestVersion.url);
+    cardElement.find('div.card-body a.btn').attr('href', "https://sk1er.club/file_download?url="+latestVersion.url);
     let versionString = 'Version ' + latestVersion.build;
     versionString += ' build ' + latestVersion.id;
     cardElement.find('div.card-footer small.text-muted').text(versionString);
@@ -16,7 +16,7 @@ $(function() {
       return !asset.name.toLowerCase().includes('sources');
     })[0];
     const cardElement = $('div#universal-installer-card');
-    cardElement.find('div.card-body a.btn').attr('href', asset.browser_download_url);
+    cardElement.find('div.card-body a.btn').attr('href', "https://sk1er.club/file_download?url="+asset.browser_download_url);
     let versionString = data.tag_name + ' of ';
     versionString += formatDate(new Date(data.published_at));
     cardElement.find('div.card-footer small.text-muted').text(versionString);
