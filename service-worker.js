@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_NAME = 'hyperiumclient-page-cache-' + CACHE_VERSION;
 const PRECACHE_URLS = [
   '/',
@@ -7,11 +7,9 @@ const PRECACHE_URLS = [
   '/js/common.js',
   '/js/pages/index.js',
   '/js/pages/downloads.js',
-  '/images/arrow-drop-down.png',
   '/images/discord-large.png',
   '/images/discord-small.png',
   '/images/github.png',
-  '/images/hyperium-small.png',
   '/images/mc-cinematic-blured.png',
   '/images/twitter.png'
 ];
