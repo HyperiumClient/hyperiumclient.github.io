@@ -34,15 +34,4 @@ function fetchJson(url, callback) {
   topAppBar.listen("MDCTopAppBar:nav", function() {
     drawer.open = !drawer.open;
   });
-
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("/service-worker.js")
-      .then(function(registration) {
-        console.log("SW: working with scope ", registration.scope);
-      })
-      .catch(function(err) {
-        console.log("SW: registration failed ", err);
-      });
-  }
 })();
