@@ -1,398 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <title>Hyperium</title>
 
-    <meta name="author" content="Hyperium Team">
-    <meta name="description" content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods">
-    <link rel="manifest" href="https://hyperium.cc/manifest.json">
-    <link rel="shortcut icon" href="https://hyperium.cc/favicon.png">
-    <meta name="theme-color" content="#000000">
-    <meta name="keywords" content="hyperium, hyperiumclient, cc, client, minecraft, clients, opensource, free, ez, skywars, bedwars, win, download, op, best, mods, mod, addons, sk1er, cubixity, kevinpriv, chattriggers, games, videogames, custom, cool, click, duels, mixins, megawalls, net, hypixel, mchypixel, community, hcc, revamp, beta, noprice, forge, mcforge, files, video, youtube, joinnow, use, popular, open, source, dev, java, mcp, modify, modded, modified, hyperion" />
+    <meta name="author" content="Hyperium Team" />
+    <meta
+      name="description"
+      content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods"
+    />
+    <link rel="manifest" href="https://hyperium.cc/manifest.json" />
+    <link rel="shortcut icon" href="https://hyperium.cc/favicon.png" />
+    <meta name="theme-color" content="#2196F3" />
+    <meta
+      name="keywords"
+      content="hyperium, hyperiumclient, cc, client, minecraft, clients, opensource, free, ez, skywars, bedwars, win, download, op, best, mods, mod, addons, sk1er, cubixity, kevinpriv, chattriggers, games, videogames, custom, cool, click, duels, mixins, megawalls, net, hypixel, mchypixel, community, hcc, revamp, beta, noprice, forge, mcforge, files, video, youtube, joinnow, use, popular, open, source, dev, java, mcp, modify, modded, modified, hyperion"
+    />
 
     <!-- Facebook Open Graph -->
-    <meta property="og:url" content="https://hyperium.cc/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Hyperium">
-    <meta property="og:image" content="https://hyperium.cc/favicon.png">
-    <meta property="og:description" content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods">
-    <meta property="og:site_name" content="Hyperium">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://hyperium.cc/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hyperium" />
+    <meta property="og:image" content="https://hyperium.cc/favicon.png" />
+    <meta
+      property="og:description"
+      content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods"
+    />
+    <meta property="og:site_name" content="Hyperium" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@HyperiumClient">
-    <meta name="twitter:creator" content="@HyperiumClient">
-    <meta name="twitter:url" content="https://hyperium.cc/">
-    <meta name="twitter:title" content="Hyperium">
-    <meta name="twitter:description" content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods">
-    <meta name="twitter:image" content="https://hyperium.cc/favicon.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@HyperiumClient" />
+    <meta name="twitter:creator" content="@HyperiumClient" />
+    <meta name="twitter:url" content="https://hyperium.cc/" />
+    <meta name="twitter:title" content="Hyperium" />
+    <meta
+      name="twitter:description"
+      content="Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods"
+    />
+    <meta name="twitter:image" content="https://hyperium.cc/favicon.png" />
 
     <!-- Disable automatic detection and formatting of possible phone numbers -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
 
     <!-- UC/QQ Browsers Settings -->
-    <meta name="nightmode" content="disable">
-    <meta name="x5-fullscreen" content="true">
-    <meta name="imagemode" content="force">
-    <meta name="wap-font-scale" content="no">
-    <meta name="full-screen" content="yes">
+    <meta name="nightmode" content="disable" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="imagemode" content="force" />
+    <meta name="wap-font-scale" content="no" />
+    <meta name="full-screen" content="yes" />
 
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+    <link rel="stylesheet" href="/dist/main.css" />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="/">
-        <img src="/images/hyperium-small.png" alt="Hyperium Logo" width="36" height="36" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home" data-scroll-to="true">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#mods" data-scroll-to="true">Mods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features" data-scroll-to="true">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#privacy-policy" data-scroll-to="true">Privacy Policy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" data-scroll-to="true">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://hyperium.sk1er.club">Shop</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/HyperiumClient/Hyperium/" target="_blank" rel="noopener">
-              <img width="16" src="/images/github.png" alt="GitHub" />
+  <body class="mdc-typography">
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+        >
+          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">
+            menu
+          </a>
+          <span class="mdc-top-app-bar__title">Hyperium</span>
+          <div class="top-app-bar__buttons">
+            <a href="#home" class="mdc-button mdc-button--unelevated">Home</a>
+            <a href="#mods" class="mdc-button mdc-button--unelevated">Mods</a>
+            <a href="#features" class="mdc-button mdc-button--unelevated">
+              Features
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/HyperiumClient/" target="_blank" rel="noopener">
-              <img width="16" src="/images/twitter.png" alt="Twitter" />
+            <a href="#privacy-policy" class="mdc-button mdc-button--unelevated">
+              Privacy Policy
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://discordapp.com/invite/8GakFcT/" target="_blank" rel="noopener">
-              <img width="16" src="/images/discord-small.png" alt="Discord" />
+            <a href="#contact" class="mdc-button mdc-button--unelevated">
+              Contact
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="/downloads" class="btn btn-downloads ml-md-2">
-              Downloads
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <header id="home" class="full-height">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col my-auto text-center text-white">
-            <h1>Hyperium</h1>
-            <p class="lead">
-              Hyperium is a Free and Open-source Minecraft Client with HUDs and other popular mods
-            </p>
           </div>
-        </div>
-      </div>
-      <div class="scroll-down">
-        <a href="#mods" data-scroll-to="true">
-          <img src="/images/arrow-drop-down.png" alt="Scroll Down Arrow" width="50" />
-        </a>
+        </section>
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+          role="toolbar"
+        >
+          <a
+            href="https://hyperium.sk1er.club/"
+            class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Shop"
+            alt="Shop"
+          >
+            shopping_cart
+          </a>
+          <a
+            href="https://github.com/HyperiumClient/Hyperium"
+            class="material-icons mdc-top-app-bar__action-item"
+            aria-label="GitHub"
+            alt="GitHub"
+          >
+            <img src="/images/github.png" width="24" />
+          </a>
+          <a
+            href="https://twitter.com/HyperiumClient"
+            class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Twitter"
+            alt="Twitter"
+          >
+            <img src="/images/twitter.png" width="24" />
+          </a>
+          <a
+            href="/discord"
+            class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Discord"
+            alt="Discord"
+          >
+            <img src="/images/discord-small.png" width="24" />
+          </a>
+        </section>
       </div>
     </header>
 
-    <section id="mods">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Mods</h2>
-            <hr />
-          </div>
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__content">
+        <div class="mdc-list">
+          <a
+            class="mdc-list-item mdc-list-item--activated"
+            href="#home"
+            aria-selected="true"
+          >
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              home
+            </i>
+            <span class="mdc-list-item__text">Home</span>
+          </a>
+          <a class="mdc-list-item" href="#mods">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              extension
+            </i>
+            <span class="mdc-list-item__text">Mods</span>
+          </a>
+          <a class="mdc-list-item" href="#features">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              assignment
+            </i>
+            <span class="mdc-list-item__text">Features</span>
+          </a>
+          <a class="mdc-list-item" href="#privacy-policy">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              security
+            </i>
+            <span class="mdc-list-item__text">Privacy Policy</span>
+          </a>
+          <a class="mdc-list-item" href="#contact">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              contact_support
+            </i>
+            <span class="mdc-list-item__text">Contact</span>
+          </a>
         </div>
-        <div class="card-columns">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Autofriend</h5>
-              <p class="card-text">Autofriend automatically accepts all friend requests on Hypixel.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=1eETPGuSQWA" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">AutoGG 2.0</h5>
-              <p class="card-text">AutoGG automatically says "gg" after a game has ended on Hypixel.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=1eETPGuSQWA" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Autotip 3.0</h5>
-              <p class="card-text">Autotip automatically tips all active Network Boosters and other Autotip users on the Hypixel Network (hypixel.net), allowing the user to collect coins, karma, and experience over time.</p>
-              <a class="btn btn-secondary" href="https://autotip.pro/" target="_blank" rel="noopener">Mod Page</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">AutoWho</h5>
-              <p class="card-text">AutoWho automatically run the "/who" command before a ranked game has started on Hypixel.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=osJW53GA_1I" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Blockoverlay</h5>
-              <p class="card-text">Blockoverlay allows you to change the style, thickness and color of the box that shows the selected block.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=FiiJO-BpxGo" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">ChromaHUD 3.0</h5>
-              <p class="card-text">ChromaHUD is a Minecraft Mod to show custom information on your screen.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=eyh6pcsGMpo" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom Crosshair</h5>
-              <p class="card-text">Custom Crosshair allows you to change the style, thickness, size and color of the crosshair.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=YYasNSTWA64" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fortnite Compass Mod</h5>
-              <p class="card-text">Fortnite Compass Mod adds a bar at the top of your screen indicating the direction you are facing.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=Anwxqk2EAlE" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Glint Colorizer</h5>
-              <p class="card-text">Glint Colorizer allows you to change toggle and change the enchantment glint on items.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=qlWbpA5fYjw" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">KeystrokesMod 4.1.1</h5>
-              <p class="card-text">KeystrokesMod enabled the ability to show the AWSD, left and right click, and the spacebar status keys onscreen.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=tA1SmI8nfY4" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Levelhead 5.0</h5>
-              <p class="card-text">Levelhead is a Minecraft Mod created for the Hypixel Network mc.hypixel.net to show a player's network level above their head.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=AMHXyAjGJ0I" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Motion Blur Mod</h5>
-              <p class="card-text">Motion blur enabled the ability to add motion blur when moving in Minecraft.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=x21aLjDbCRw" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">OldAnimations 1.0</h5>
-              <p class="card-text">OldAnimations is a Minecraft Mod to turn back Minecraft 1.7 animations.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=9-LoFff-3fI" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">PerspectiveMod 1.0</h5>
-              <p class="card-text">PerspectiveMod is a Minecraft Mod that allows you to view your character in at any angle by modifying camera placement.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=7FdMMpzNdUk" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">SidebarMod 1.0</h5>
-              <p class="card-text">SidebarMod is a Minecraft Mod that allows you to edit the scoreboard placement and size</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=cn9VvT43yRs" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom Reach Display Mod</h5>
-              <p class="card-text">Hyperium Reach Display Mod is an exclusive mod that adds the distance of the hits directly in the world where they happened.</p>
-              <a class="btn btn-secondary" href="https://twitter.com/Sk1er_/status/1016152703607635968" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">ToggleChat 1.0</h5>
-              <p class="card-text">ToggleChat is a Minecraft Mod that allows you to toggle the visibility of specific chat messages on the Hypixel Network.</p>
-              <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=guD8kAk-Wn4" target="_blank" rel="noopener">Showcase video</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Orange Marshall Vanilla Enhancements</h5>
-              <p class="card-text">Orange Marshall Vanilla Enhancements adds enhancements to several key parts of the game.</p>
-              <a class="btn btn-secondary" href="https://minecraft.curseforge.com/projects/vanilla-enhancements" target="_blank" rel="noopener">Mod page</a>
+      </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-top-app-bar--fixed-adjust">
+      <div id="home" class="main-title-container">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-12-tablet"
+            >
+              <h1
+                class="mdc-typography--headline2 mdc-theme--text-primary-on-dark"
+              >
+                Hyperium
+              </h1>
+              <span
+                class="mdc-typography--body1 mdc-theme--text-primary-on-dark"
+              >
+                Free and Open-source Minecraft Client with HUDs and other
+                popular mods
+              </span>
+              <a href="/downloads" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Downloads</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="features">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Features</h2>
-            <hr />
+      <section id="mods">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <h2 class="mdc-typography--headline3">Mods</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell container-cell">
+              <ul class="mdc-image-list mdc-image-list--masonry mods-list">
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Autofriend
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Autofriend automatically accepts all friend requests on
+                      Hypixel.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        AutoGG
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      AutoGG automatically says "gg" after a game has ended on
+                      Hypixel.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Autotip
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Autotip automatically tips all active Network Boosters and
+                      other Autotip users on the Hypixel Network (hypixel.net),
+                      allowing the user to collect coins, karma, and experience
+                      over time.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        AutoWho
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      AutoWho automatically run the "/who" command before a
+                      ranked game has started on Hypixel.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        BlockOverlay
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      BlockOverlay allows you to change the style, thickness and
+                      color of the box that shows the selected block.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        ChromaHUD
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      ChromaHUD is a Minecraft Mod to show custom information on
+                      your screen.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Custom Crosshair
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Custom Crosshair allows you to change the style,
+                      thickness, size and color of the crosshair.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Custom Reach Display Mod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Hyperium Reach Display Mod is an exclusive mod that adds
+                      the distance of the hits directly in the world where they
+                      happened.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Fortnite Compass Mod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Fortnite Compass Mod adds a bar at the top of your screen
+                      indicating the direction you are facing.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Glint Colorizer
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Glint Colorizer allows you to change toggle and change the
+                      enchantment glint on items.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        KeystrokesMod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      KeystrokesMod enabled the ability to show the AWSD, left
+                      and right click, and the spacebar status keys onscreen.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Levelhead
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Levelhead is a Minecraft Mod created for the Hypixel
+                      Network mc.hypixel.net to show a player's network level
+                      above their head.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Motion Blur Mod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Motion blur enabled the ability to add motion blur when
+                      moving in Minecraft.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        OldAnimations
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      OldAnimations is a Minecraft Mod to turn back Minecraft
+                      1.7 animations.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Orange Marshall Vanilla Enchantments
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Orange Marshall Vanilla Enhancements adds enchantments to
+                      several key parts of the game.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        PerspectiveMod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      PerspectiveMod is a Minecraft Mod that allows you to view
+                      your character in at any angle by modifying camera
+                      placement.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        SidebarMod
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      SidebarMod is a Minecraft Mod that allows you to edit the
+                      scoreboard placement and size.
+                    </div>
+                  </div>
+                </li>
+                <li class="mdc-image-list__item">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        ToggleChat
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      ToggleChat is a Minecraft Mod that allows you to toggle
+                      the visibility of specific chat messages on the Hypixel
+                      Network.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="card-deck mb-sm-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Performance enchantments</h5>
-              <p class="card-text">
-                Hyperium addresses many issues within Minecraft that negatively affect performance. As a result, you should see a more stable game with a higher average frame rate.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cosmetics</h5>
-              <p class="card-text">
-                Hyperium adds many purchasable cosmetics including custom particle auras, capes, wings, ears, dragon head and more.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Advanced Customization</h5>
-              <p class="card-text">
-                Control many features within Minecraft that are not normally controllable.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Discord Rich Presense</h5>
-              <p class="card-text">
-                Let your friends know what games you are playing with Minecraft!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="privacy-policy">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Privacy Policy</h2>
-            <hr />
-          </div>
-        </div>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">What data does Hyperium Collect?</h5>
-              <p class="card-text">
-                When using Hyperium, the client and integrated mods send a few small pieces of information to a remote server in exchange for a temporary token for accessing data from Hypixel. This information includes your Minecraft UUID and
-                username, Minecraft Version,
-                Client Version and specific mod being used. This information is processed and used to determine if the client is out of date or if the client should abort the startup procedure. Hyperium may also collect the servers you play on and
-                the duration of time spent on servers.
-              </p>
+      <section id="features">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <h2 class="mdc-typography--headline3">Features</h2>
+              <hr />
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">What we do with the data</h5>
-              <p class="card-text">
-                The data is stored securely for analytic purposes. We will never sell or release the data collected from specific users. All analytic graphs may be viewed on <a href="https://sk1er.club/graphs/hyperium">sk1er.club/graphs/hyperium</a>
-              </p>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell container-cell">
+              <div class="mdc-layout-grid__inner two-columns">
+                <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Performance Enchantments
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Hyperium addresses many issues within Minecraft that
+                      negatively affect performance. As a result, you should see
+                      a more stable game with a higher average frame rate.
+                    </div>
+                  </div>
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Advanced Customization
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Control many features within Minecraft that are not
+                      normally controllable.
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Cosmetics
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Hyperium adds many purchasable cosmetics including custom
+                      particle auras, capes, wings, ears, dragon head and more.
+                    </div>
+                  </div>
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        Discord Rich Presence
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      Let your friends know what games you are playing with
+                      Minecraft!
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Contact</h2>
-            <hr />
+      <section id="privacy-policy">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <h2 class="mdc-typography--headline3">Privacy Policy</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell container-cell">
+              <div class="mdc-layout-grid__inner two-columns">
+                <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        What data does Hyperium Collect?
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      When using Hyperium, the client and integrated mods send a
+                      few small pieces of information to a remote server in
+                      exchange for a temporary token for accessing data from
+                      Hypixel. This information includes your Minecraft UUID and
+                      username, Minecraft Version, Client Version and specific
+                      mod being used. This information is processed and used to
+                      determine if the client is out of date or if the client
+                      should abort the startup procedure. Hyperium may also
+                      collect the servers you play on and the duration of time
+                      spent on servers.
+                    </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card">
+                    <div class="hyperium-card__primary">
+                      <h2
+                        class="hyperium-card__title mdc-typography--headline6"
+                      >
+                        What we do with the data
+                      </h2>
+                    </div>
+                    <div class="hyperium-card__secondary mdc-typography--body2">
+                      The data is stored securely for analytic purposes. We will
+                      never sell or release the data collected from specific
+                      users. All analytic graphs may be viewed on
+                      <a href="https://sk1er.club/graphs/hyperium">
+                        sk1er.club/graphs/hyperium
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <a href="https://discordapp.com/invite/8GakFcT/" target="_blank" rel="noopener noreferrer">
-              <img src="/images/discord-large.png" alt="Discord Logo" width="300" />
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xs-8 col-sm-4 col-md-3 text-center">
-            <h2>Contributors</h2>
-            <hr />
-          </div>
-        </div>
-        <div class="card-columns" id="contributors-container"></div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <p class="m-0">
-              Copyright &copy; 2019 Sk1er LLC.
-            </p>
+      <section id="contact">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <h2 class="mdc-typography--headline3">Contact</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <a href="/discord">
+                <img
+                  src="/images/discord-large.png"
+                  alt="Discord Logo"
+                  width="100%"
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/common.js"></script>
-    <script type="text/javascript" src="/js/pages/index.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71140240-7"></script>
+      <section id="contributors">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div
+              class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
+            >
+              <h2 class="mdc-typography--headline3">Contributors</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-gird__cell container-cell">
+              <div
+                class="mdc-layout-grid__inner"
+                id="contributors-container"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid_cell container-cell">
+            <span class="mdc-typography--body1">
+              Copyright &copy; 2019 Sk1er LLC
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="/dist/common.js"></script>
+    <script src="/dist/pages/index.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-71140240-7"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-71140240-7');
-
+      gtag("config", "UA-71140240-7");
     </script>
   </body>
-
 </html>

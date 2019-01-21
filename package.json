@@ -1,0 +1,32 @@
+{
+  "name": "hyperiumclient.github.io",
+  "version": "1.0.0",
+  "description": "Hyperium Minecraft Client github page",
+  "main": "index.js",
+  "scripts": {
+    "dist": "npm run dist:js && npm run dist:css",
+    "dist:js": "babel js/ --out-dir dist/ --presets=@babel/env --minified",
+    "dist:css": "cleancss css/main.css -o dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunohpaiva/hyperiumclient.github.io.git"
+  },
+  "keywords": [
+    "Hyperium",
+    "Minecraft",
+    "Client"
+  ],
+  "author": "Hyperium",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/brunohpaiva/hyperiumclient.github.io/issues"
+  },
+  "homepage": "https://github.com/brunohpaiva/hyperiumclient.github.io#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "clean-css-cli": "^4.2.1"
+  }
+}

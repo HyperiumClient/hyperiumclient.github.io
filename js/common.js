@@ -5,44 +5,31 @@ function fetchJson(url, callback) {
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState === 4) {
       if (httpRequest.status === 200) {
-        var data = JSON.parse(httpRequest.responseText);
-        if (callback) {
-          callback(data);
-        }
+        callback(JSON.parse(httpRequest.responseText));
+      } else {
+        callback(undefined, new Error(httpRequest.statusText));
       }
     }
   };
-  httpRequest.open('GET', url);
+  httpRequest.open("GET", url);
   httpRequest.send();
 }
 
-$(function() {
-  $('a[data-scroll-to="true"]').click(function(event) {
-    event.preventDefault();
-    const element = $(this);
-    const targetId = element.attr("href");
-    const targetElement = $(targetId);
-    //From: https://stackoverflow.com/a/39494245
-    var startingY = window.pageYOffset;
-    var diff = (targetElement.offset().top - 25) - startingY;
-    var start;
-    window.requestAnimationFrame(function step(timestamp) {
-      if (!start)
-        start = timestamp;
-      var time = timestamp - start;
-      var percent = Math.min(time / 300, 1);
-      window.scrollTo(0, startingY + diff * percent);
-      if (time < 300) {
-        window.requestAnimationFrame(step);
-      }
-    });
-  });
+(function() {
+  document
+    .querySelectorAll(".mdc-button, .mdc-list-item")
+    .forEach(el => new mdc.ripple.MDCRipple(el));
+  const topAppBar = new mdc.topAppBar.MDCTopAppBar(
+    document.querySelector(".mdc-top-app-bar")
+  );
+  const drawer = mdc.drawer.MDCDrawer.attachTo(
+    document.querySelector(".mdc-drawer")
+  );
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-      console.log('SW: working with scope ', registration.scope);
-    }).catch(function(err) {
-      console.log('SW: registration failed ', err);
-    });
-  }
-});
+  drawer.foundation_.handleScrimClick = () => {
+    drawer.open = !drawer.open;
+  };
+  topAppBar.listen("MDCTopAppBar:nav", () => {
+    drawer.open = !drawer.open;
+  });
+})();
