@@ -18,9 +18,7 @@ function fetchJson(url, callback) {
 (function() {
   document
     .querySelectorAll(".mdc-button, .mdc-list-item")
-    .forEach(function(el) {
-      new mdc.ripple.MDCRipple(el);
-    });
+    .forEach(el => new mdc.ripple.MDCRipple(el));
   const topAppBar = new mdc.topAppBar.MDCTopAppBar(
     document.querySelector(".mdc-top-app-bar")
   );
@@ -28,10 +26,10 @@ function fetchJson(url, callback) {
     document.querySelector(".mdc-drawer")
   );
 
-  drawer.foundation_.handleScrimClick = function() {
+  drawer.foundation_.handleScrimClick = () => {
     drawer.open = !drawer.open;
   };
-  topAppBar.listen("MDCTopAppBar:nav", function() {
+  topAppBar.listen("MDCTopAppBar:nav", () => {
     drawer.open = !drawer.open;
   });
 })();
