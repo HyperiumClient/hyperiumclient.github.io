@@ -15,6 +15,10 @@ div.top-app-bar__buttons {
   margin-left: 10px;
 }
 
+div.top-app-bar__buttons a.mdc-button {
+  background-color: #2196f3;
+}
+
 div.top-app-bar__buttons a.mdc-button:not(:first-child) {
   margin-left: 5px;
 }
@@ -33,6 +37,10 @@ div.main-title-container div.mdc-layout-grid__cell {
 div.main-title-container div.mdc-layout-grid__cell .mdc-typography--body1 {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+div.main-title-container a.mdc-button--raised {
+  background-color: #2196f3;
 }
 
 section div.mdc-layout-grid__cell.title-cell {
