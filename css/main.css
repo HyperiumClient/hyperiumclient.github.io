@@ -134,6 +134,10 @@ footer {
         grid-column-start: 3;
     }
 
+    .container-cell.downloads-grid-cell {
+        grid-column-start: 4;
+    }
+
     .container-cell > .mdc-layout-grid__inner.two-columns > .mdc-layout-grid__cell {
         grid-column-end: span 6;
     }
