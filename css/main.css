@@ -48,12 +48,17 @@ section div.mdc-layout-grid__cell.title-cell {
     margin-bottom: 20px;
 }
 
+div.mdc-card.hyperium-card {
+    height: 100%;
+}
+
 div.mdc-card div.hyperium-card__primary {
     padding: 1rem;
 }
 
 div.mdc-card div.hyperium-card__secondary {
     padding: 0 1rem 8px;
+    height: 100%;
 }
 
 .hyperium-card__title, .hyperium-card__subtitle {
