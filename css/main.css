@@ -48,12 +48,17 @@ section div.mdc-layout-grid__cell.title-cell {
     margin-bottom: 20px;
 }
 
+div.mdc-card.hyperium-card {
+    height: 100%;
+}
+
 div.mdc-card div.hyperium-card__primary {
     padding: 1rem;
 }
 
 div.mdc-card div.hyperium-card__secondary {
     padding: 0 1rem 8px;
+    height: 100%;
 }
 
 .hyperium-card__title, .hyperium-card__subtitle {
@@ -132,6 +137,10 @@ footer {
 
     .container-cell {
         grid-column-start: 3;
+    }
+
+    .container-cell.downloads-grid-cell {
+        grid-column-start: 4;
     }
 
     .container-cell > .mdc-layout-grid__inner.two-columns > .mdc-layout-grid__cell {
