@@ -70,11 +70,6 @@ div.mdc-card div.hyperium-card__secondary {
     color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54));
 }
 
-.hyperium-card-shaped {
-    border-left: #2196f3 2px solid;
-    border-left: var(--mdc-theme-primary, #2196f3) 2px solid;
-}
-
 ul.mods-list {
     -webkit-column-count: 2;
     column-count: 2;
