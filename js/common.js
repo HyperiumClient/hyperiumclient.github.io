@@ -1,5 +1,5 @@
 function fetchJson(url, callback) {
-    var httpRequest = window.XMLHttpRequest
+    const httpRequest = window.XMLHttpRequest
         ? new XMLHttpRequest()
         : new ActiveXObject("Microsoft.XMLHTTP");
     httpRequest.onreadystatechange = function () {
