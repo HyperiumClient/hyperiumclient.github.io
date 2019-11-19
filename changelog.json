@@ -1,0 +1,56 @@
+{
+    "Additions": [
+        {
+            "title": "Customizable Server Button",
+            "description": "Quickly join any and all servers with this button! Customizable via holding shift and clicking it."
+        },
+        {
+            "title": "FOV Modifier",
+            "description": "Modify the field of view whenever sprinting, aiming with a bow, have slowness, or have speed!"
+        },
+        {
+            "title": "Support for Optifine 1.8.9 L4",
+            "description": "Stay up to date with the latest Optifine version!"
+        },
+        {
+            "title": "ToggleChat Improvements",
+            "description": "Remove /boop messages from players using ToggleChat!"
+        }
+    ],
+    "Fixes": [
+        {
+            "title": "Nick Hider Improvements",
+            "description": "Patched a possible crash when using Nick Hider."
+        },
+        {
+            "title": "Limbo Detection",
+            "description": "Removed the user from the limbo state if they left the server."
+        },
+        {
+            "title": "Performance",
+            "description": [
+                "Patched up unclosed streams and connections.",
+                "Patched up memory leaks from server icons and tree generation.",
+                "Improved Font Renderer performance.",
+                "Improved nearby item performance.",
+                "Improved startup performance."
+            ]
+        }
+    ],
+    "Miscellaneous": [
+        {
+            "title": "Other Changes",
+            "description": [
+                "Client brand is now set to 'hyperium'.",
+                "Head Scale max was changed from 2.5 to 3.",
+                "Hyperium now logs how long it took to start.",
+                "'FPS Limiter Amount' was renamed to 'FPS Limit'.",
+                "'Toggle Leather' keybind was changed to NONE by default."
+            ]
+        },
+        {
+            "title": "Languages",
+            "description": "German and Irish have been updated."
+        }
+    ]
+}
