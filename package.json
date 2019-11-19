@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dist": "npm run dist:js && npm run dist:css",
-    "dist:js": "babel js/ --out-dir dist/ --presets=@babel/env --minified",
+    "dist:js": "babel js/ --out-dir dist/ --presets=@babel/env,minify --minified",
     "dist:css": "cleancss css/main.css -o dist/main.css"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "babel-preset-minify": "^0.5.1",
     "clean-css-cli": "^4.2.1"
   }
 }
