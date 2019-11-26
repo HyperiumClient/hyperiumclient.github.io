@@ -79,7 +79,8 @@ ul.mods-list {
 }
 
 ul.mods-list li {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 2px;
 }
 
 div.mdc-layout-grid__cell h1, div.mdc-layout-grid__cell h2 {
