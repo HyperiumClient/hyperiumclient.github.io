@@ -39,6 +39,14 @@ div.main-title-container div.mdc-layout-grid__cell .mdc-typography--body1 {
     margin-bottom: 0.5rem;
 }
 
+div.main-title-container div.mdc-layout-grid__cell > div {
+    display: inline-grid;
+    -webkit-grid-gap: 5px;
+    grid-gap: 5px;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 div.main-title-container a.mdc-button--raised {
     background-color: #2196f3;
 }
