@@ -1,0 +1,127 @@
+[
+  {
+    "name": "AutoGG",
+    "description": "AutoGG automatically says \"gg\" after a game has ended on Hypixel.",
+    "original": "https://2pi.pw/mods/autogg"
+  },
+  {
+    "name": "Auto MyPosition",
+    "description": [
+      "<b>Requires VIP on Hypixel.</b>",
+      "Auto MyPosition runs /myposition once you join a Hypixel game. This allows you to see what position you are on the leaderboards."
+    ],
+    "original": "https://hypixel.net/threads/forge-1-8-9-auto-myposition-mod-a-mod-which-does-myposition-before-every-game.1983543/"
+  },
+  {
+    "name": "Autotip",
+    "description": "Autotip automatically tips all active Network Boosters and other Autotip users on the Hypixel Network, allowing the user to collect coins, karma, and experience over time.",
+    "original": "https://autotip.pro/"
+  },
+  {
+    "name": "Block Overlay",
+    "description": "Block Overlay allows you to change the style, thickness, and color of the selected block's highlight.",
+    "original": "https://hypixel.net/threads/forge-1-8-9-block-overlay-v3-2.1417995/"
+  },
+  {
+    "name": "Bossbar Customization",
+    "description": "Bossbar Customization mod allows you to select what bossbar elements you want to be visible, edit the position, and change the scale.",
+    "original": "https://sk1er.club/mods/bossbar_customizer"
+  },
+  {
+    "name": "ChatTriggers",
+    "description": "A framework that allows for client modifications to be scripted in JavaScript.",
+    "original": "https://www.chattriggers.com/"
+  },
+  {
+    "name": "ChromaHUD",
+    "description": "ChromaHUD is a Minecraft Mod to show custom information on your screen.",
+    "original": "https://sk1er.club/mods/ChromaHUD"
+  },
+  {
+    "name": "Chunk Animator",
+    "description": "When new chunks are loaded in vanilla minecraft they simply \"appear instantly\", with this mod they can be animated to either appear from below or above.",
+    "original": "https://www.curseforge.com/minecraft/mc-mods/chunk-animator"
+  },
+  {
+    "name": "Compact Chat",
+    "description": "Make chat easier to read by removing duplicate messages.",
+    "original": "https://sk1er.club/mods/compactchat"
+  },
+  {
+    "name": "Custom Crosshair",
+    "description": "Custom Crosshair allows you to change the style, thickness, size, and color of the crosshair.",
+    "original": "https://www.curseforge.com/minecraft/mc-mods/custom-crosshair-mod"
+  },
+  {
+    "name": "Custom Reach Display Mod",
+    "description": "Hyperium Reach Display Mod is an exclusive mod that adds the distance of the hits directly in the world where they happened."
+  },
+  {
+    "name": "Glint Colorizer",
+    "description": "Glint Colorizer allows you to change the enchantment glint on items.",
+    "original": "https://www.youtube.com/watch?v=qlWbpA5fYjw"
+  },
+  {
+    "name": "Item Physics",
+    "description": "Make item drops a little more realistic.",
+    "original": "https://www.curseforge.com/minecraft/mc-mods/itemphysic-lite"
+  },
+  {
+    "name": "Keystrokes",
+    "description": "Keystrokes enables the ability to show the WASD, left and right click, and the spacebar status keys on screen.",
+    "original": "https://sk1er.club/mods/keystrokesmod"
+  },
+  {
+    "name": "Levelhead",
+    "description": "Levelhead is a Minecraft Mod created for the Hypixel Network to show a player's network level above their head.",
+    "original": "https://sk1er.club/mods/level_head"
+  },
+  {
+    "name": "Motion Blur Mod",
+    "description": "Motion blur enables the ability to add motion blur when moving in Minecraft.",
+    "original": "https://2pi.pw/mods/motionblur"
+  },
+  {
+    "name": "Mouse Bind Fix",
+    "description": "Mouse Bind Fix fixes an issue where keybinds bound to mouse buttons do not work in inventories in Minecraft.",
+    "original": "https://sk1er.club/mods/mousebindfix"
+  },
+  {
+    "name": "Mouse Delay Fix",
+    "description": "Mouse Delay Fix fixes the mouse delay bug which causes your actual block and entity interaction position to be one tick behind your crosshair.",
+    "original": "https://prplz.io/mousedelayfix/"
+  },
+  {
+    "name": "Nick Hider",
+    "description": "Nick Hider will do its best to detect and mask your name on Hypixel.",
+    "original": "https://sk1er.club/mods/nick_hider"
+  },
+  {
+    "name": "Old Animations",
+    "description": "Old Animations is a Minecraft Mod that allows you to have 1.7 animations in 1.8."
+  },
+  {
+    "name": "Time Changer",
+    "description": "Changes the time of day from the player's perspective, so that your game can be more aesthetically pleasing.",
+    "original": "https://2pi.pw/mods/timechanger"
+  },
+  {
+    "name": "Vanilla Enhancements",
+    "description": "Vanilla Enhancements is an adaptation of OrangeMarshall's mod that adds enhancements to several key parts of the game."
+  },
+  {
+    "name": "Perspective Mod",
+    "description": "Perspective Mod is a Minecraft Mod that allows you to view your character in at any angle by modifying camera placement.",
+    "original": "https://www.youtube.com/watch?v=7FdMMpzNdUk"
+  },
+  {
+    "name": "Sidebar Mod",
+    "description": "Sidebar Mod is a Minecraft Mod that allows you to edit the scoreboard placement and size.",
+    "original": "https://www.youtube.com/watch?v=cn9VvT43yRs"
+  },
+  {
+    "name": "ToggleChat",
+    "description": "ToggleChat is a Minecraft Mod that allows you to toggle the visibility of specific chat messages on the Hypixel Network.",
+    "original": "https://2pi.pw/mods/togglechat"
+  }
+]
