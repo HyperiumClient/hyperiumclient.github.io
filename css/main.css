@@ -181,11 +181,16 @@ footer {
     }
 }
 
+.show {
+    opacity: 1 !important;
+}
+
 div#changelog-sections section[id] {
     opacity: 0;
     transition: all 0.4s cubic-bezier(.65,.05,.36,1);
 }
 
-div#changelog-sections section[id].show {
-    opacity: 1;
+ul.mods-list li {
+    opacity: 0;
+    transition: all 0.35s cubic-bezier(.65,.05,.36,1);
 }

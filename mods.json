@@ -1,0 +1,106 @@
+[
+  {
+    "name": "AutoGG",
+    "description": "AutoGG automatically says \"gg\" after a game has ended on Hypixel.",
+    "original": "https://2pi.pw/mods/autogg"
+  },
+  {
+    "name": "Auto MyPosition",
+    "description": [
+      "<b>Requires VIP on Hypixel.</b>",
+      "Auto MyPosition runs /myposition once you join a Hypixel game. This allows you to see what position you are on the leaderboards."
+    ]
+  },
+  {
+    "name": "Autotip",
+    "description": "Autotip automatically tips all active Network Boosters and other Autotip users on the Hypixel Network, allowing the user to collect coins, karma, and experience over time."
+  },
+  {
+    "name": "Block Overlay",
+    "description": "Block Overlay allows you to change the style, thickness, and color of the selected block's highlight."
+  },
+  {
+    "name": "Bossbar Customization",
+    "description": "Bossbar Customization mod allows you to select what bossbar elements you want to be visible, edit the position, and change the scale."
+  },
+  {
+    "name": "ChatTriggers",
+    "description": "A framework that allows for client modifications to be scripted in JavaScript."
+  },
+  {
+    "name": "ChromaHUD",
+    "description": "ChromaHUD is a Minecraft Mod to show custom information on your screen."
+  },
+  {
+    "name": "Chunk Animator",
+    "description": "When new chunks are loaded in vanilla minecraft they simply \"appear instantly\", with this mod they can be animated to either appear from below or above."
+  },
+  {
+    "name": "Compact Chat",
+    "description": "Make chat easier to read by removing duplicate messages."
+  },
+  {
+    "name": "Custom Crosshair",
+    "description": "Custom Crosshair allows you to change the style, thickness, size, and color of the crosshair."
+  },
+  {
+    "name": "Custom Reach Display Mod",
+    "description": "Hyperium Reach Display Mod is an exclusive mod that adds the distance of the hits directly in the world where they happened."
+  },
+  {
+    "name": "Glint Colorizer",
+    "description": "Glint Colorizer allows you to change the enchantment glint on items."
+  },
+  {
+    "name": "Item Physics",
+    "description": "Make item drops a little more realistic."
+  },
+  {
+    "name": "Keystrokes",
+    "description": "Keystrokes enables the ability to show the WASD, left and right click, and the spacebar status keys on screen."
+  },
+  {
+    "name": "Levelhead",
+    "description": "Levelhead is a Minecraft Mod created for the Hypixel Network to show a player's network level above their head."
+  },
+  {
+    "name": "Motion Blur Mod",
+    "description": "Motion blur enables the ability to add motion blur when moving in Minecraft."
+  },
+  {
+    "name": "Mouse Bind Fix",
+    "description": "Mouse Bind Fix fixes an issue where keybinds bound to mouse buttons do not work in inventories in Minecraft."
+  },
+  {
+    "name": "Mouse Delay Fix",
+    "description": "Mouse Delay Fix fixes the mouse delay bug which causes your actual block and entity interaction position to be one tick behind your crosshair."
+  },
+  {
+    "name": "Nick Hider",
+    "description": "Nick Hider will do its best to detect and mask your name on Hypixel."
+  },
+  {
+    "name": "Old Animations",
+    "description": "Old Animations is a Minecraft Mod that allows you to have 1.7 animations in 1.8."
+  },
+  {
+    "name": "Time Changer",
+    "description": "Changes the time of day from the player's perspective, so that your game can be more aesthetically pleasing."
+  },
+  {
+    "name": "Vanilla Enhancements",
+    "description": "Vanilla Enhancements is an adaptation of OrangeMarshall's mod that adds enhancements to several key parts of the game."
+  },
+  {
+    "name": "Perspective Mod",
+    "description": "Perspective Mod is a Minecraft Mod that allows you to view your character in at any angle by modifying camera placement."
+  },
+  {
+    "name": "Sidebar Mod",
+    "description": "Sidebar Mod is a Minecraft Mod that allows you to edit the scoreboard placement and size."
+  },
+  {
+    "name": "ToggleChat",
+    "description": "ToggleChat is a Minecraft Mod that allows you to toggle the visibility of specific chat messages on the Hypixel Network."
+  }
+]
