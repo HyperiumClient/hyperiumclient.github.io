@@ -97,6 +97,9 @@
             setTimeout(() => element.classList.add("show"), index * 50);
         });
 
+        modsList
+            .querySelectorAll(".mdc-button")
+            .forEach(el => new mdc.ripple.MDCRipple(el));
         document.querySelector("div.loading-cell").remove();
     });
 })();
