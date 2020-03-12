@@ -144,7 +144,7 @@ footer {
     }
 
     .container-cell.downloads-grid-cell {
-        grid-column-start: 4;
+        grid-column-start: 5;
     }
 
     .container-cell > .mdc-layout-grid__inner.two-columns > .mdc-layout-grid__cell {

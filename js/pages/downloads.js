@@ -26,30 +26,4 @@
         localStorage.setItem("hyperiumLatestVersion", JSON.stringify(data.latest));
         showHyperiumLatestVersion(data.latest);
     });
-
-    const showHyperiumLatestExeVersion = latestVersion => {
-        document
-            .querySelector("div#latest-exe-version-card a.mdc-button")
-            .setAttribute(
-                "href",
-                "https://sk1er.club/file_download?url=https://static.sk1er.club/hyperium_files/Hyperium%20Executable%20Installer.exe"
-            );
-        let versionString = "Version " + latestVersion.build;
-        versionString += " build " + latestVersion.id;
-        document.querySelector(
-            "div#latest-exe-version-card .hyperium-card__secondary"
-        ).textContent = versionString;
-    };
-
-    fetchJson(HYPERIUM_LATEST_VERSION_URL, (data, error) => {
-        if (error) {
-            const cachedObject = localStorage.getItem("hyperiumLatestExeVersion");
-            if (cachedObject && cachedObject.length > 0) {
-                showHyperiumLatestExeVersion(JSON.parse(cachedObject));
-            }
-            return;
-        }
-        localStorage.setItem("hyperiumLatestExeVersion", JSON.stringify(data.latest));
-        showHyperiumLatestExeVersion(data.latest);
-    });
 })();
