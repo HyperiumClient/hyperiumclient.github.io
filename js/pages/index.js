@@ -40,10 +40,10 @@
                 contributor.name
             }</h2><h3 class="hyperium-card__subtitle mdc-typography--subtitle2">${
                 contributor.contributions
-            } contributions</h3></div><div class="mdc-card__actions mdc-card__actions--full-bleed">
+            } contributions</h3></div><div class="mdc-card__actions">
       <a class="mdc-button mdc-card__action mdc-card__action--button" href="${
                 contributor.profileUrl
-            }"><span class="mdc-button__label">GitHub</span></a></div></div>`;
+            }" target="_blank"><div class="mdc-button__ripple"></div><span class="mdc-button__label">GitHub</span></a></div></div>`;
 
             containerElement.appendChild(element);
         });
