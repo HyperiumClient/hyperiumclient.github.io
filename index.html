@@ -1,452 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Hyperium</title>
 
-    <meta name="author" content="Hyperium Team"/>
-    <meta
-            name="description"
-            content="Hyperium is an Open Source Minecraft Client with plenty of features and customization."
-    />
-    <link rel="manifest" href="https://hyperium.cc/manifest.json"/>
-    <link rel="shortcut icon" href="https://hyperium.cc/favicon.png"/>
-    <meta name="theme-color" content="#2196F3"/>
-    <meta
-            name="keywords"
-            content="hyperium, hyperiumclient, cc, client, minecraft, clients, opensource, free, ez, skywars, bedwars, win, download, op, best, mods, mod, addons, sk1er, cubixity, kevinpriv, chattriggers, games, videogames, custom, cool, click, duels, mixins, megawalls, net, hypixel, mchypixel, community, hcc, revamp, beta, noprice, forge, mcforge, files, video, youtube, joinnow, use, popular, open, source, dev, java, mcp, modify, modded, modified, hyperion"
-    />
+    <meta name="author" content="Hyperium Team" />
+    <meta name="description"
+        content="Hyperium is an Open Source Minecraft Client with plenty of features and customization." />
+    <link rel="manifest" href="https://hyperium.cc/manifest.json" />
+    <link rel="shortcut icon" href="https://hyperium.cc/favicon.png" />
+    <meta name="theme-color" content="#2196F3" />
+    <meta name="keywords"
+        content="hyperium, hyperiumclient, cc, client, minecraft, clients, opensource, free, ez, skywars, bedwars, win, download, op, best, mods, mod, addons, sk1er, cubixity, kevinpriv, chattriggers, games, videogames, custom, cool, click, duels, mixins, megawalls, net, hypixel, mchypixel, community, hcc, revamp, beta, noprice, forge, mcforge, files, video, youtube, joinnow, use, popular, open, source, dev, java, mcp, modify, modded, modified, hyperion" />
 
     <!-- Facebook Open Graph -->
-    <meta property="og:url" content="https://hyperium.cc/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Hyperium"/>
-    <meta property="og:image" content="https://hyperium.cc/favicon.png"/>
-    <meta
-            property="og:description"
-            content="Hyperium is an Open Source Minecraft Client with plenty of features and customization."
-    />
-    <meta property="og:site_name" content="Hyperium"/>
-    <meta property="og:locale" content="en_US"/>
+    <meta property="og:url" content="https://hyperium.cc/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hyperium" />
+    <meta property="og:image" content="https://hyperium.cc/favicon.png" />
+    <meta property="og:description"
+        content="Hyperium is an Open Source Minecraft Client with plenty of features and customization." />
+    <meta property="og:site_name" content="Hyperium" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@HyperiumClient"/>
-    <meta name="twitter:creator" content="@HyperiumClient"/>
-    <meta name="twitter:url" content="https://hyperium.cc/"/>
-    <meta name="twitter:title" content="Hyperium"/>
-    <meta
-            name="twitter:description"
-            content="Hyperium is an Open Source Minecraft Client with plenty of features and customization."
-    />
-    <meta name="twitter:image" content="https://hyperium.cc/favicon.png"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@HyperiumClient" />
+    <meta name="twitter:creator" content="@HyperiumClient" />
+    <meta name="twitter:url" content="https://hyperium.cc/" />
+    <meta name="twitter:title" content="Hyperium" />
+    <meta name="twitter:description"
+        content="Hyperium is an Open Source Minecraft Client with plenty of features and customization." />
+    <meta name="twitter:image" content="https://hyperium.cc/favicon.png" />
 
     <!-- Disable automatic detection and formatting of possible phone numbers -->
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
 
     <!-- UC/QQ Browsers Settings -->
-    <meta name="nightmode" content="disable"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="imagemode" content="force"/>
-    <meta name="wap-font-scale" content="no"/>
-    <meta name="full-screen" content="yes"/>
+    <meta name="nightmode" content="disable" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="imagemode" content="force" />
+    <meta name="wap-font-scale" content="no" />
+    <meta name="full-screen" content="yes" />
 
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-            rel="stylesheet"
-    />
-    <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-    />
-    <link rel="stylesheet" href="dist/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+    <link rel="stylesheet" href="dist/main.css" />
 </head>
 
 <body class="mdc-typography">
-<header class="mdc-top-app-bar">
-    <div class="mdc-top-app-bar__row">
-        <section
-                class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
-        >
-            <a href="#" class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">
-                menu
-            </a>
-            <span class="mdc-top-app-bar__title">Hyperium</span>
-            <div class="top-app-bar__buttons">
-                <a href="#home" class="mdc-button mdc-button--unelevated">
-                    <div class="mdc-button__ripple"></div>
-                    Home
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="#" class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">
+                    menu
                 </a>
-                <a href="#mods" class="mdc-button mdc-button--unelevated">
-                    <div class="mdc-button__ripple"></div>
-                    Mods
-                </a>
-                <a href="#features" class="mdc-button mdc-button--unelevated">
-                    <div class="mdc-button__ripple"></div>
-                    Features
-                </a>
-                <a href="#privacy-policy" class="mdc-button mdc-button--unelevated">
-                    <div class="mdc-button__ripple"></div>
-                    Privacy Policy
-                </a>
-                <a href="#contact" class="mdc-button mdc-button--unelevated">
-                    <div class="mdc-button__ripple"></div>
-                    Contact
-                </a>
-            </div>
-        </section>
-        <section
-                class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
-                role="toolbar"
-        >
-            <a
-                    href="https://hyperium.sk1er.club/"
-                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Shop"
-            >
-                shopping_cart
-            </a>
-            <a
-                    href="https://github.com/HyperiumClient/Hyperium"
-                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="GitHub"
-            >
-                <img src="images/github.png" width="24" alt="Github"/>
-            </a>
-            <a
-                    href="https://twitter.com/HyperiumClient"
-                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Twitter"
-            >
-                <img src="images/bluebird.png" width="24" alt="Blue Bird"/>
-            </a>
-            <a
-                    href="https://hyperium.cc/discord"
-                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-                    aria-label="Discord"
-            >
-                <img src="images/discord-small.png" width="24" alt="Discord"/>
-            </a>
-        </section>
-    </div>
-</header>
-
-<aside class="mdc-drawer mdc-drawer--modal">
-    <div class="mdc-drawer__content">
-        <div class="mdc-list">
-            <a
-                    class="mdc-list-item mdc-list-item--activated"
-                    href="#home"
-                    aria-selected="true"
-            >
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
-                    home
-                </i>
-                <span class="mdc-list-item__text">Home</span>
-            </a>
-            <a class="mdc-list-item" href="#mods">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
-                    extension
-                </i>
-                <span class="mdc-list-item__text">Mods</span>
-            </a>
-            <a class="mdc-list-item" href="#features">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
-                    assignment
-                </i>
-                <span class="mdc-list-item__text">Features</span>
-            </a>
-            <a class="mdc-list-item" href="#privacy-policy">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
-                    security
-                </i>
-                <span class="mdc-list-item__text">Privacy Policy</span>
-            </a>
-            <a class="mdc-list-item" href="#contact">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
-                    contact_support
-                </i>
-                <span class="mdc-list-item__text">Contact</span>
-            </a>
-        </div>
-    </div>
-</aside>
-
-<div class="mdc-drawer-scrim"></div>
-
-<div class="mdc-top-app-bar--fixed-adjust">
-    <div id="home" class="main-title-container">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-12-tablet">
-                    <h1 class="mdc-typography--headline2 mdc-theme--text-primary-on-dark">
-                        Hyperium
-                    </h1>
-                    <span class="mdc-typography--body1 mdc-theme--text-primary-on-dark">
-                     Open Source Minecraft Client with plenty of features and customization.
-                    </span>
-                    <div>
-                        <a href="downloads" class="mdc-button mdc-button--raised">
-                            <div class="mdc-button__ripple"></div>
-                            <span class="mdc-button__label">Downloads</span>
-                        </a>
-                        <a href="changelog" class="mdc-button mdc-button--raised">
-                            <div class="mdc-button__ripple"></div>
-                            <span class="mdc-button__label">Changelog</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section id="mods">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <h2 class="mdc-typography--headline3">Mods</h2>
-                    <hr/>
-                </div>
-            </div>
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell loading-cell">
-                    <h2 class="mdc-typography--headline6">Loading...</h2>
-                </div>
-                <div class="mdc-layout-grid__cell container-cell">
-                    <ul class="mdc-image-list mdc-image-list--masonry mods-list">
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <h2 class="mdc-typography--headline3">Features</h2>
-                    <hr/>
-                </div>
-            </div>
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell container-cell">
-                    <div class="mdc-layout-grid__inner two-columns">
-                        <div class="mdc-layout-grid__cell">
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        Performance & Memory Improvements
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    Hyperium addresses many issues within Minecraft that
-                                    negatively affect performance and memory leaks. As a result, you should see
-                                    a more stable game with a higher average frame rate and less
-                                    memory usage.
-                                </div>
-                            </div>
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        Advanced Customization
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    Control many features within Minecraft that are not
-                                    normally controllable.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdc-layout-grid__cell">
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        Cosmetics
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    Hyperium adds many purchasable cosmetics including Custom
-                                    Particle Auras, Capes, Wings, Ears, Hats, Companions, and more.
-                                </div>
-                            </div>
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        Discord Rich Presence
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    Let your friends know what server you're on while playing Minecraft!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="privacy-policy">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <h2 class="mdc-typography--headline3">Privacy Policy</h2>
-                    <hr/>
-                </div>
-            </div>
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell container-cell">
-                    <div class="mdc-layout-grid__inner two-columns">
-                        <div class="mdc-layout-grid__cell">
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        What data does Hyperium Collect?
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    When using Hyperium, the client and integrated mods send a
-                                    few small pieces of information to a remote server in
-                                    exchange for a temporary token for accessing data from
-                                    Hypixel. This information includes your Minecraft UUID and
-                                    username, Minecraft Version, Client Version and specific
-                                    mod being used. This information is processed and used to
-                                    determine if the client is out of date or if the client
-                                    should abort the startup procedure.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdc-layout-grid__cell">
-                            <div class="mdc-card">
-                                <div class="hyperium-card__primary">
-                                    <h2
-                                            class="hyperium-card__title mdc-typography--headline6"
-                                    >
-                                        What we do with the data
-                                    </h2>
-                                </div>
-                                <div class="hyperium-card__secondary mdc-typography--body2">
-                                    The data is stored securely for analytic purposes. We will
-                                    never sell or release the data collected from specific
-                                    users. You may request to download your data at any time.
-                                    All analytic graphs may be viewed on
-                                    <a href="https://sk1er.club/graphs/hyperium">
-                                        sk1er.club/graphs/hyperium
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <h2 class="mdc-typography--headline3">Contact</h2>
-                    <hr/>
-                </div>
-            </div>
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <a href="https://hyperium.cc/discord">
-                        <img
-                                src="images/discord-large.png"
-                                alt="Discord Logo"
-                                width="100%"
-                        />
+                <span class="mdc-top-app-bar__title">Hyperium</span>
+                <div class="top-app-bar__buttons">
+                    <a href="#home" class="mdc-button mdc-button--unelevated">
+                        <div class="mdc-button__ripple"></div>
+                        Home
+                    </a>
+                    <a href="#mods" class="mdc-button mdc-button--unelevated">
+                        <div class="mdc-button__ripple"></div>
+                        Mods
+                    </a>
+                    <a href="#features" class="mdc-button mdc-button--unelevated">
+                        <div class="mdc-button__ripple"></div>
+                        Features
+                    </a>
+                    <a href="#privacy-policy" class="mdc-button mdc-button--unelevated">
+                        <div class="mdc-button__ripple"></div>
+                        Privacy Policy
+                    </a>
+                    <a href="#contact" class="mdc-button mdc-button--unelevated">
+                        <div class="mdc-button__ripple"></div>
+                        Contact
                     </a>
                 </div>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <a href="https://hyperium.sk1er.club/"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Shop">
+                    shopping_cart
+                </a>
+                <a href="https://github.com/HyperiumClient/Hyperium"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub">
+                    <img src="images/github.png" width="24" alt="Github" />
+                </a>
+                <a href="https://twitter.com/HyperiumClient"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Twitter">
+                    <img src="images/bluebird.png" width="24" alt="Blue Bird" />
+                </a>
+                <a href="https://hyperium.cc/discord"
+                    class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Discord">
+                    <img src="images/discord-small.png" width="24" alt="Discord" />
+                </a>
+            </section>
+        </div>
+    </header>
+
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__content">
+            <div class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#home" aria-selected="true">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+                        home
+                    </i>
+                    <span class="mdc-list-item__text">Home</span>
+                </a>
+                <a class="mdc-list-item" href="#mods">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+                        extension
+                    </i>
+                    <span class="mdc-list-item__text">Mods</span>
+                </a>
+                <a class="mdc-list-item" href="#features">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+                        assignment
+                    </i>
+                    <span class="mdc-list-item__text">Features</span>
+                </a>
+                <a class="mdc-list-item" href="#privacy-policy">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+                        security
+                    </i>
+                    <span class="mdc-list-item__text">Privacy Policy</span>
+                </a>
+                <a class="mdc-list-item" href="#contact">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+                        contact_support
+                    </i>
+                    <span class="mdc-list-item__text">Contact</span>
+                </a>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <section id="contributors">
-        <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-                <div
-                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell"
-                >
-                    <h2 class="mdc-typography--headline3">Contributors</h2>
-                    <hr/>
-                </div>
-            </div>
-            <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-gird__cell container-cell">
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-top-app-bar--fixed-adjust">
+        <div id="home" class="main-title-container">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
                     <div
-                            class="mdc-layout-grid__inner"
-                            id="contributors-container"
-                    ></div>
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-12-tablet">
+                        <h1 class="mdc-typography--headline2 mdc-theme--text-primary-on-dark">
+                            Hyperium
+                        </h1>
+                        <span class="mdc-typography--body1 mdc-theme--text-primary-on-dark">
+                            Open Source Minecraft Client with plenty of features and customization.
+                        </span>
+                        <div>
+                            <a href="downloads" class="mdc-button mdc-button--raised">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Downloads</span>
+                            </a>
+                            <a href="changelog" class="mdc-button mdc-button--raised">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Changelog</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell container-cell">
-                <span class="mdc-typography--body1">
-                    Copyright &copy; 2020 Sk1er LLC
-                </span>
+        <section id="mods">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <h2 class="mdc-typography--headline3">Mods</h2>
+                        <hr />
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell loading-cell">
+                        <h2 class="mdc-typography--headline6">Loading...</h2>
+                    </div>
+                    <div class="mdc-layout-grid__cell container-cell">
+                        <ul class="mdc-image-list mdc-image-list--masonry mods-list">
+
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </section>
 
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-<script src="dist/common.js"></script>
-<script src="dist/pages/index.js"></script>
-<script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-71140240-7"
-></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
+        <section id="features">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <h2 class="mdc-typography--headline3">Features</h2>
+                        <hr />
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell container-cell">
+                        <div class="mdc-layout-grid__inner two-columns">
+                            <div class="mdc-layout-grid__cell">
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            Performance & Memory Improvements
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        Hyperium addresses many issues within Minecraft that
+                                        negatively affect performance and memory leaks. As a result, you should see
+                                        a more stable game with a higher average frame rate and less
+                                        memory usage.
+                                    </div>
+                                </div>
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            Advanced Customization
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        Control many features within Minecraft that are not
+                                        normally controllable.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell">
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            Cosmetics
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        Hyperium adds many purchasable cosmetics including Custom
+                                        Particle Auras, Capes, Wings, Ears, Hats, Companions, and more.
+                                    </div>
+                                </div>
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            Discord Rich Presence
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        Let your friends know what server you're on while playing Minecraft!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
+        <section id="privacy-policy">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <h2 class="mdc-typography--headline3">Privacy Policy</h2>
+                        <hr />
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell container-cell">
+                        <div class="mdc-layout-grid__inner two-columns">
+                            <div class="mdc-layout-grid__cell">
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            What data does Hyperium Collect?
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        When using Hyperium, the client and integrated mods send a
+                                        few small pieces of information to a remote server in
+                                        exchange for a temporary token for accessing data from
+                                        Hypixel. This information includes your Minecraft UUID and
+                                        username, Minecraft Version, Client Version and specific
+                                        mod being used. This information is processed and used to
+                                        determine if the client is out of date or if the client
+                                        should abort the startup procedure.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell">
+                                <div class="mdc-card">
+                                    <div class="hyperium-card__primary">
+                                        <h2 class="hyperium-card__title mdc-typography--headline6">
+                                            What we do with the data
+                                        </h2>
+                                    </div>
+                                    <div class="hyperium-card__secondary mdc-typography--body2">
+                                        The data is stored securely for analytic purposes. We will
+                                        never sell or release the data collected from specific
+                                        users. You may request to download your data at any time.
+                                        All analytic graphs may be viewed on
+                                        <a href="https://sk1er.club/graphs/hyperium">
+                                            sk1er.club/graphs/hyperium
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    gtag("js", new Date());
+        <section id="contact">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <h2 class="mdc-typography--headline3">Contact</h2>
+                        <hr />
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <a href="https://hyperium.cc/discord">
+                            <img src="images/discord-large.png" alt="Discord Logo" width="100%" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    gtag("config", "UA-71140240-7");
-</script>
+        <section id="contributors">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div
+                        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-4-tablet title-cell">
+                        <h2 class="mdc-typography--headline3">Contributors</h2>
+                        <hr />
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-gird__cell container-cell">
+                        <div class="mdc-layout-grid__inner" id="contributors-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell container-cell">
+                    <span class="mdc-typography--body1">
+                        Copyright &copy; 2020 Sk1er LLC
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="dist/common.js"></script>
+    <script src="dist/pages/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71140240-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "UA-71140240-7");
+    </script>
 </body>
+
 </html>
