@@ -2,6 +2,8 @@
     --mdc-theme-primary: #2196f3;
     --mdc-theme-secondary: #3f51b5;
     --mdc-theme-background: #fafafa;
+    color: #000000 !important; 
+
 }
 
 html, body {
@@ -29,7 +31,6 @@ div.top-app-bar__buttons a.mdc-button:not(:first-child) {
 }
 
 div.main-title-container {
-    background-image: url('../images/mc-cinematic-blured.png');
     background-attachment: fixed;
     background-position-y: -140px;
     background-size: cover;
