@@ -4,8 +4,7 @@
   "description": "Hyperium Minecraft Client github page",
   "main": "index.js",
   "scripts": {
-    "dist": "npm run dist:js && npm run dist:css",
-    "dist:js": "babel js/ --out-dir dist/ --presets=@babel/env,minify --minified",
+    "dist": "npm run dist:css",
     "dist:css": "cleancss css/main.css -o dist/main.css"
   },
   "repository": {

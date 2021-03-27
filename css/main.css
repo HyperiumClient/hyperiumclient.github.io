@@ -36,10 +36,6 @@ div.main-title-container {
     background-size: cover;
 }
 
-div.main-title-container div.mdc-layout-grid__cell {
-    text-align: center;
-}
-
 div.main-title-container div.mdc-layout-grid__cell .mdc-typography--body1 {
     display: block;
     margin-bottom: 0.5rem;
@@ -55,11 +51,6 @@ div.main-title-container div.mdc-layout-grid__cell>div {
 
 div.main-title-container a.mdc-button--raised {
     background-color: #2196f3;
-}
-
-section div.mdc-layout-grid__cell.title-cell {
-    text-align: center;
-    margin: 0 auto 20px;
 }
 
 div.mdc-card {
